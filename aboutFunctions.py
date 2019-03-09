@@ -36,3 +36,8 @@ def cel_to_fah(value):
 
 
 print(cel_to_fah(10))
+
+
+print(r"hello\world")
+print("hello\world")
+
