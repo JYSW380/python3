@@ -35,7 +35,9 @@ def cel_to_fah(value):
     return (value * (9 / 5)) + 32
 
 
-print(cel_to_fah(10))
+temperature = [10, -20, 100]
+for i in temperature:
+    print(cel_to_fah(i))
 
 
 print(r"hello\world")
