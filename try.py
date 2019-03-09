@@ -5,7 +5,7 @@ print(address[0], address[1])
 # print(len(address))
 # print(type(address[1]))
 # print(address[0:2])  slicing is upper bound exclusive
-# print(address[-1])
+# print(address[-2])
 
 # address.append("usa")
 # address.remove("usa")
