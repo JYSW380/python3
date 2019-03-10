@@ -29,3 +29,22 @@ fruit = fruit.splitlines()
 for item in fruit:
     print(len(item))
 
+# example 6
+correct_pw = "123"
+name = input("enter your name: ")
+surname = input("enter your surname: ")
+pw = input("please enter a password: ")
+while pw != correct_pw:
+    pw = input("please enter a password: ")
+
+print("hi %s you are logged in" % name)  # string formatting
+print("hi %s %s, you are logged in" % (name, surname))
+
+# example 7
+a = ['a', 'b', 'c']
+b = [1, 2, 3]
+for i, j in zip(a, b):
+    print("%s is %s" % (i, j))
+
+
+

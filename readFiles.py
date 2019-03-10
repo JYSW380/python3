@@ -36,3 +36,7 @@ newfile = open("number.txt", "w")
 for i in number:
     newfile.write(str(i) + "\n")
 newfile.close()
+
+
+with open("sample2.txt", "w") as myfile:
+    myfile.write("something")
