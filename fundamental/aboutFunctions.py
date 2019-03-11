@@ -1,4 +1,7 @@
 # function 1
+from pip._vendor.urllib3.filepost import writer
+
+
 def string_length(mystring):
     if type(mystring) == int:
         return "Sorry integers don't have length"
@@ -42,15 +45,15 @@ for i in temperature:
 print(r"hello\world")
 print("hello\world")
 
+
 temperatures = [10, -20, -289, 100]
-
-
-def c_to_f(c):
-    if c < -273.15:
-        return "That temperature doesn't make sense!"
-    else:
-        f = c * 9 / 5 + 32
-        return f
+def writer(temperatures, filepath):
+    with open(filepath, "w") as file:
+        for c in temperatures:
+            if c > -273.15:
+                f = c * 9 / 5 + 32
+                file.write(str(f) + "\n")
+writer(temperature, "temperatureRecord.txt")
 
 
 
